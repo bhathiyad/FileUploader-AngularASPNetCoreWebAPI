@@ -1,0 +1,102 @@
+<style>
+    .my-drop-zone { border: dotted 3px lightgray; }
+    .nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+    .another-file-over-class { border: dotted 3px green; }
+
+    html, body { height: 100%; }
+</style>
+
+<div class="container">
+    <h3>File Uploader</h3>
+    <form #form="ngForm" (submit)="submitForm(form)" novalidate>
+      <div class="form-group" [class.has-error]="description.invalid && description.touched">
+        <label class="control-label">Description</label>
+        <input #description="ngModel" required type="text" class="form-control" name="description"
+          [(ngModel)]="model.description">
+        <div *ngIf="description.invalid && description.touched">
+          <div class="alert alert-danger"  *ngIf="description?.errors.required">
+            description is required.
+          </div>
+        </div>
+      </div>
+  
+      <div>
+      <div class="form-group">
+            <div ng2FileDrop
+            [ngClass]="{'nv-file-over': hasBaseDropZoneOver}"
+            (fileOver)="fileOverBase($event)"
+            [uploader]="uploader"
+            class="well my-drop-zone">
+           Base drop zone
+       </div>
+
+       <div ng2FileDrop
+            [ngClass]="{'another-file-over-class': hasAnotherDropZoneOver}"
+            (fileOver)="fileOverAnother($event)"
+            [uploader]="uploader"
+            class="well my-drop-zone">
+           Another drop zone
+       </div>
+        <label class="control-label">Files</label>
+        <input required type="file" multiple ng2FileSelect [uploader]="uploader" class="form-control"
+          name="screenshot">
+      </div>
+    </div>
+  
+      <div style="margin-bottom: 10px" *ngIf="uploader?.queue?.length">
+        <h3>Upload queue</h3>
+        <p>Queue length: {{ uploader?.queue?.length }}</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="50%">Name</th>
+              <th>Size</th>
+              <th>Progress</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of uploader?.queue">
+              <td>
+                <strong>{{ item?.file?.name }}</strong>
+              </td>
+              <td nowrap>{{ item?.file?.size/1024/1024 | number:'.2' }} MB</td>
+              <td>
+                <div class="progress" style="margin-bottom: 0;">
+                  <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': item.progress + '%' }"></div>
+                </div>
+              </td>
+              <td class="text-center">
+                <span *ngIf="item.isError">
+                  <i class="glyphicon glyphicon-remove"></i>
+                </span>
+              </td>
+              <td nowrap>
+                <button type="button" class="btn btn-danger btn-xs" (click)="item.remove()">
+                  <span class="glyphicon glyphicon-trash"></span> Remove
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <div>
+          <div>
+            Queue progress:
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': uploader.progress + '%' }"></div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-danger btn-s" (click)="uploader?.clearQueue()"
+            [disabled]="!uploader.queue.length">
+            <span class="glyphicon glyphicon-trash"></span> Remove all
+          </button>
+        </div>
+      </div>
+      <button class="btn btn-primary" [disabled]="form.invalid || !uploader?.queue?.length"
+        type="submit">Submit</button>
+    </form>
+    <br>
+  </div>
+  
