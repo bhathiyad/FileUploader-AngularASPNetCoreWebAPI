@@ -1,0 +1,15 @@
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\bin\Debug\netcoreapp2.1\FileUploadAPI.deps.json
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\bin\Debug\netcoreapp2.1\FileUploadAPI.runtimeconfig.json
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\bin\Debug\netcoreapp2.1\FileUploadAPI.runtimeconfig.dev.json
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\bin\Debug\netcoreapp2.1\FileUploadAPI.dll
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\bin\Debug\netcoreapp2.1\FileUploadAPI.pdb
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.csprojAssemblyReference.cache
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.csproj.CoreCompileInputs.cache
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.RazorAssemblyInfo.cache
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.RazorAssemblyInfo.cs
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.AssemblyInfoInputs.cache
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.AssemblyInfo.cs
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.RazorTargetAssemblyInfo.cache
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.dll
+E:\BoardPACDev\BoardPACNextV\AngularExamples\AngularFileUpload\WebAPIBackEnd\FileUploadAPI\FileUploadAPI\obj\Debug\netcoreapp2.1\FileUploadAPI.pdb
