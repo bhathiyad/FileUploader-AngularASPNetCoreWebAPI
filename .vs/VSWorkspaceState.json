@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FileUploadAPI",
+    "\\FileUploadAPI\\FileUploadAPI"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\e2e",
   "PreviewInSolutionExplorer": false
 }
